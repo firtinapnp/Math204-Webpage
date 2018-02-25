@@ -4,16 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Syllabus</title>
+	<title>Math 204 Homepage</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
 	<link rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="PDFObject/pdfobject.js"></script>
 </head>
-<body class="flex-container">
+<body>
 	<header>
 		<script>
 		$(function(){
@@ -22,14 +21,9 @@
 		</script>
 	</header>
 	<main>
-		<div class="container">
-			<object id="syllabus" data="syllabus.pdf" type="application/pdf" width="100%"></object>
-		</div>
+		<h1>Math 204</h1>
+		<h2>Differential Equations</h2>
 	</main>
+
 </body>
 </html>
-<script>
-	var windowHeight=window.screen.availHeight;
-	var navheight= $("header").height();
-	$("#syllabus").height(windowHeight-navheight);
-</script>
