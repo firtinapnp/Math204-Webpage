@@ -12,18 +12,94 @@
 	<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="grey lighten-2">
 	<header>
 		<script>
-		$(function(){
+		$(document).ready(function(){
 			$("header").load("navbar.html");
+			$(".collapsible").collapsible({
+				onOpen: function(el) {
+					$(el).find(".collapsible-header").addClass( "active-collapsible" );
+				},
+				onClose: function(el) {
+					$(el).find(".collapsible-header").removeClass( "active-collapsible" );
+				}
+			})
 		});
+		$.ajax({
+			url: "homeworks.json",
+			datatype: "json",
+			success: function(res){
+				var homeworks=res.homeworks;
+				var homeworksElement=document.getElementById("homeworks");
+				for(var i=0;i<homeworks.length;i++){
+					homeworksElement.appendChild(createCollapsible(homeworks[i]));
+				}
+				$('.collapsible').collapsible('open', homeworks.length-1);
+				$(".collapsible-header.active").addClass("active-collapsible");
+
+			}
+		});
+		var createCollapsible=function(obj){
+			var title=obj.title;
+			var table=obj.table;
+			var collapsible=document.createElement("li");
+			collapsible.setAttribute("id",title);
+			var header=document.createElement("div");
+			header.setAttribute("class","collapsible-header");
+			header.innerHTML=title;
+			var body=document.createElement("div");
+			body.setAttribute("class","collapsible-body white");
+			body.appendChild(createTable(table));
+			collapsible.appendChild(header);
+			collapsible.appendChild(body);
+			return collapsible;
+		};
+		var createTable=function(array){
+			// Create table and table header
+			var table=document.createElement("table");
+			table.setAttribute("class","bordered striped");
+			var tableHead=document.createElement("thead");
+			var headerRow=document.createElement("tr");
+			headerRow.innerHTML="<th>Section</th><th>Problems</th>";
+			tableHead.appendChild(headerRow);
+			table.appendChild(tableHead);
+			var tableBody=document.createElement("tbody");
+			for(var i in array){
+				var row=array[i];
+				var tablerow=document.createElement("tr");
+				var section=row.section;
+				var problems=row.problems;
+				probStr = problems.reduce(function(previousVal, currentVal) {
+					return previousVal + currentVal+", ";
+				}, "");
+				probStr=probStr.substr(0,probStr.length-3);
+				var sectionData=document.createElement("td");
+				var probData=document.createElement("td");
+				sectionData.innerHTML=section;
+				probData.innerHTML=probStr;
+				tablerow.appendChild(sectionData);
+				tablerow.appendChild(probData);
+				tableBody.appendChild(tablerow);
+			}
+			table.appendChild(tableBody);
+			return table;
+		}
 		</script>
 	</header>
 	<main>
-		<h1>Math 204</h1>
-		<h2>Differential Equations</h2>
-	</main>
+		<h3 class="center-align">Homework Assignments</h3>
+		<div class="container">
+			<ul id="homeworks" class="collapsible popout" data-collapsible="accordion">
 
+			</ul>
+		</div>
+	</main>
 </body>
 </html>
+<style>
+.active-collapsible{
+	background-color: #5294e2;
+	color: rgba(245, 246, 247, 0.999);
+}
+</style>
