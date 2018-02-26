@@ -18,18 +18,22 @@
 		<script>
 		$(function(){
 			$("header").load("navbar.html");
+			$("#syllabus").load("syllabus_doc.htm",function( response, status, xhr ) {
+				if ( status == "error" ) {
+				}
+			});
 		});
 		</script>
 	</header>
 	<main>
 		<div class="container">
-			<object id="syllabus" data="syllabus.pdf" type="application/pdf" width="100%"></object>
+			<div id="syllabus"></div>
 		</div>
 	</main>
 </body>
 </html>
 <script>
-	var windowHeight=window.screen.availHeight;
-	var navheight= $("header").height();
-	$("#syllabus").height(windowHeight-navheight);
+var windowHeight=window.screen.availHeight;
+var navheight= $("header").height();
+$("#syllabus").height(windowHeight-navheight);
 </script>
