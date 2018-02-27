@@ -18,22 +18,69 @@
 		<script>
 		$(function(){
 			$("header").load("navbar.html");
-			$("#syllabus").load("syllabus_doc.htm",function( response, status, xhr ) {
-				if ( status == "error" ) {
-				}
-			});
 		});
 		</script>
 	</header>
 	<main>
 		<div class="container">
-			<div id="syllabus"></div>
+			<div id="syllabus">
+				<h3 class="center-align">Syllabus for Math 204</h3>
+			    <h4 class="center-align">Spring 2018</h4>
+			    <div id="page_1">
+			        <h5>Title of the Course: Differential Equations</h5>
+			        <p>Click <a href="syllabus.pdf">here</a> to view the syllabus as pdf</p>
+			        <h5>Instructors</h5>
+					<blockquote>
+						<ul>
+				            <li>Hasan İnci, SCI 268, Office Hours: Mo 10:30-11:30<a href="mailto:hinci@ku.edu.tr">(hinci@ku.edu.tr)</a></li>
+				            <li>Tolga Etgü, SCI 105, Office Hours: TuTh 15:00-16:00<a href="mailto:tetgu@ku.edu.tr">(tetgu@ku.edu.tr)</a></li>
+				        </ul>
+					</blockquote>
+			        <h5>Teaching Assistants (TAs)</h5>
+					<blockquote>
+						<ul>
+				            <li>Oğuz Doğan, SCI 156, Office Hours: Th 14:00-15:00 <a href="mailto:odogan13@ku.edu.tr">(odogan13@ku.edu.tr)</a></li>
+				            <li>Fırtına Küçük, SCI 156, Office Hours: Tu 14:00-15:00 <a href="mailto:fkucuk@ku.edu.tr">(fkucuk@ku.edu.tr)</a></li>
+				            <li>Murat Can Aşkaroğulları, SCI 130, Office Hours: We 12:30-14:30 <a href="mailto:maskarogullari16@ku.edu.tr">(maskarogullari16@ku.edu.tr)</a></li>
+				        </ul>
+					</blockquote>
+			        <h5>Web Address</h5>
+			        <p><a href="http://home.ku.edu.tr/~math204">http://home.ku.edu.tr/~math204</a></p>
+			        <h5>Textbook</h5>
+			        <img class="left-align" src="images/book.jpg" alt="">
+			        <p> W. E. Boyce, R. C. DiPrima, D.B. Meade, Elementary Differential Equations and
+			        Boundary Value Problems, Global/11th Edition (John Wiley & Sons, New York, 2017).</p>
+			        <h5>Topics to be covered</h5>
+			        <p>Introduction to differential equations (Chapter 1); First order ODEs (ordinary differential equations) (Chapter 2); Second and higher order ODEs (Chapters 3 and 4); Power series solution of ODEs (Chapter 5); The Laplace transform (Chapter 6);
+			        Systems of linear ODEs (Chapter 7); Partial differential equations (Chapter 10)</p>
+			        <h5>Evaluation method</h5>
+			        <p>Students’ progress will be evaluated according to their performance in two midterms and a final exam. The final exam will be a comprehensive exam covering all the material of the course.</p>
+			        <p>The contribution of the exams are as follows:</p>
+			        <blockquote>midterm exams 30% each, final exam 40%.</blockquote>
+			        <h5>Problem Sessions</h5>
+			        <p>Attendance to the weekly problem sessions is strongly recommended.</p>
+			        <h5>The Make-Up Policy</h5>
+			        <p>If a student misses only one midterm exam and has a <strong>documented valid excuse</strong> (e.g., illness, family emergency, or attendance to university endorsed activities) <strong>accepted by the Dean’s office</strong>, his/her score in the final exam will be substituted for the grade of the exam that is missed.
+			        If a student misses more than one midterm exam and/or the final exam, and has a documented valid excuse accepted by the Dean’s office for each one of these exams, a single comprehensive make-up will be given after the final and its grade will be substituted for the grades of the exams that are missed.</p>
+			        <h5>Policy for Auditing Students</h5>
+			        <p>In order to get an AU (Audit) in this course a student should attend a minimum of 20 lectures. It is the auditing student’s responsibility to contact the instructor at the end of each class and ask to sign a special attendance sheet.</p>
+			        <h5>Academic Dishonesty</h5>
+			        <p>Students and faculty adhere to the following principles of academic honesty at Koç University. Cheating, plagiarism, and collusion are serious offenses resulting in an F as well as serious disciplinary action.</p>
+			    </div>
+
+			    <DIV style="padding: 50px 0px 15px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 8px; color: #c8c8c8;">
+			    </DIV>
+
+			</div>
 		</div>
 	</main>
 </body>
 </html>
-<script>
-var windowHeight=window.screen.availHeight;
-var navheight= $("header").height();
-$("#syllabus").height(windowHeight-navheight);
-</script>
+<style>
+  html {
+    font-family: Helvetica, sans-serif;
+  }
+  blockquote{
+  	border-left:5px solid #1976d2;
+  }
+</style>
