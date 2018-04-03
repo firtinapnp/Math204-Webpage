@@ -85,6 +85,39 @@
               "problems":["2","3","7","9","11"]
           }
       ]
+    },
+    {
+      "title":"Homework 7",
+      "table":[
+          {
+              "section":"5.1",
+              "problems":["4","6","14","20"]
+          },
+          {
+              "section":"5.2",
+              "problems":["2","4","9","12 (a)"]
+          },
+          {
+              "section":"5.3",
+              "problems":["1","4","17","18"]
+          }
+      ]
+    },{
+      "title":"Homework 8",
+      "table":[
+          {
+              "section":"5.4",
+              "problems":["3","12"]
+          },
+          {
+              "section":"6.1",
+              "problems":["6","18","24"]
+          },
+          {
+              "section":"6.2",
+              "problems":["4","7","10","18"]
+          }
+      ]
     }
   ]
 }
