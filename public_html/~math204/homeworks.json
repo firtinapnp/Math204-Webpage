@@ -131,6 +131,36 @@
               "problems":["7","12","24"]
           }
       ]
+    },
+    {
+      "title":"Homework 10",
+      "table":[
+          {
+              "section":"6.4",
+              "problems":["2","3","6","16(b)"]
+          },
+          {
+              "section":"6.6",
+              "problems":["10","12","14"]
+          }
+      ]
+    },
+    {
+      "title":"Homework 11",
+      "table":[
+          {
+              "section":"7.1",
+              "problems":["2","4","12","14"]
+          },
+          {
+              "section":"7.4",
+              "problems":["1","2 (d,f)","5 (a,b)","6","9","10 (a,b)"]
+          },
+          {
+              "section":"7.5",
+              "problems":["9","11","21"]
+          }
+      ]
     }
   ]
 }
