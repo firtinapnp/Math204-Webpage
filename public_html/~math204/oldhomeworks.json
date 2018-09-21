@@ -1,0 +1,192 @@
+{
+  "homeworks": [
+      {
+        "title":"Homework 1",
+        "table":[
+            {
+                "section":"2.1",
+                "problems":["2","7","10","21","24","30"]
+            },
+            {
+                "section":"2.2",
+                "problems":["4","7","18","23","34"]
+            }
+        ]
+      },
+      {
+        "title":"Homework 2",
+        "table":[
+            {
+                "section":"2.4",
+                "problems":["3","20","22","24"]
+            },
+            {
+                "section":"2.6",
+                "problems":["9","16","22"]
+            },
+            {
+                "section":"2.8",
+                "problems":["2","14"]
+            }
+        ]
+      },
+      {
+        "title":"Homework 3",
+        "table":[
+            {
+                "section":"3.1",
+                "problems":["10","13","16","20"]
+            },
+            {
+                "section":"3.2",
+                "problems":["4","9","12","16","18","27","31"]
+            }
+        ]
+    },
+    {
+      "title":"Homework 4",
+      "table":[
+          {
+              "section":"3.3",
+              "problems":["11","13","15","25"]
+          },
+          {
+              "section":"3.4",
+              "problems":["6","12","16","28"]
+          },
+          {
+              "section":"3.6",
+              "problems":["2", "6", "12", "16", "17","18"]
+          }
+      ]
+    },
+    {
+      "title":"Homework 5",
+      "table":[
+          {
+              "section":"4.1",
+              "problems":["2","12","13","15"]
+          },
+          {
+              "section":"4.2",
+              "problems":["8","10","21","27","28"]
+          }
+      ]
+    },
+    {
+      "title":"Homework 6",
+      "table":[
+          {
+              "section":"4.3",
+              "problems":["14","15","16 (10,11,13)"]
+          },
+          {
+              "section":"4.4",
+              "problems":["2","3","7","9","11"]
+          }
+      ]
+    },
+    {
+      "title":"Homework 7",
+      "table":[
+          {
+              "section":"5.1",
+              "problems":["4","6","14","20"]
+          },
+          {
+              "section":"5.2",
+              "problems":["2","4","9","12 (a)"]
+          },
+          {
+              "section":"5.3",
+              "problems":["1","4","17","18"]
+          }
+      ]
+    },{
+      "title":"Homework 8",
+      "table":[
+          {
+              "section":"5.4",
+              "problems":["3","12"]
+          },
+          {
+              "section":"6.1",
+              "problems":["6","18","24"]
+          },
+          {
+              "section":"6.2",
+              "problems":["4","7","10","18"]
+          }
+      ]
+    },
+    {
+      "title":"Homework 9",
+      "table":[
+          {
+              "section":"6.2",
+              "problems":["6","9","15","19","20(a)"]
+          },
+          {
+              "section":"6.3",
+              "problems":["7","12","24"]
+          }
+      ]
+    },
+    {
+      "title":"Homework 10",
+      "table":[
+          {
+              "section":"6.4",
+              "problems":["2","3","6","16(b)"]
+          },
+          {
+              "section":"6.6",
+              "problems":["10","12","14"]
+          }
+      ]
+    },
+    {
+      "title":"Homework 11",
+      "table":[
+          {
+              "section":"7.1",
+              "problems":["2","4","12","14"]
+          },
+          {
+              "section":"7.4",
+              "problems":["1","2 (d,f)","5 (a,b)","6","9","10 (a,b)"]
+          },
+          {
+              "section":"7.5",
+              "problems":["9","11","21"]
+          }
+      ]
+    },
+    {
+      "title":"Homework 12",
+      "table":[
+          {
+              "section":"7.6",
+              "problems":["4","5","6","7"]
+          },
+          {
+              "section":"7.8",
+              "problems":["4 (b,c)","6","13","15"]
+          }
+      ]
+    },
+    {
+      "title":"Homework 13",
+      "table":[
+          {
+              "section":"7.7",
+              "problems":["3","5","9","10"]
+          },
+          {
+              "section":"7.9",
+              "problems":["2","4","7","12"]
+          }
+      ]
+    }
+  ]
+}
