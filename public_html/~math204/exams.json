@@ -1,30 +1,5 @@
 {
   "exams": [
-      {
-        "title":"Midterm 1",
-        "solutions":[
-            {
-                "name":"Left",
-                "link":"mt1-left.pdf"
-            },
-            {
-                "name":"Right",
-                "link":"mt1-right.pdf"
-            }
-        ]
-      },
-      {
-        "title":"Midterm 2",
-        "solutions":[
-            {
-                "name":"Left",
-                "link":"mt2-left.pdf"
-            },
-            {
-                "name":"Right",
-                "link":"mt2-right.pdf"
-            }
-        ]
-      }
+
   ]
 }
