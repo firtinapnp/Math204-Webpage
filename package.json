@@ -1,57 +1,28 @@
 {
-  "name": "react204",
-  "version": "1.0.0",
-  "description": "Math204 Webpage Remastered with React",
-  "main": "server.js",
-  "repository": "git@github.com:firtinapnp/Math204-Webpage.git",
-  "scripts": {
-    "start": "npm-run-all --parallel watch:server watch:build",
-    "watch:build": "webpack --watch",
-    "watch:server": "nodemon \"./server.js\" --watch \"./\"",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.1.18",
-    "chai": "^3.5.0",
-    "chai-jquery": "^2.0.0",
-    "css-loader": "^0.28.7",
-    "jquery": "^2.2.1",
-    "jsdom": "^8.1.0",
-    "mocha": "^2.4.5",
-    "node-loader": "^0.6.0",
-    "node-sass": "^4.5.3",
-    "nodemon": "^1.12.1",
-    "npm-run-all": "^4.1.1",
-    "react-addons-test-utils": "^0.14.7",
-    "sass-loader": "^6.0.6",
-    "script-loader": "^0.7.1",
-    "style-loader": "^0.18.2",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
-  },
+  "name": "math204",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "axios": "^0.16.2",
-    "babel-preset-stage-1": "^6.1.18",
-    "express": "^4.16.0",
-    "foundation-sites": "^6.4.3",
-    "jquery": "^2.2.4",
-    "jsonfile": "^4.0.0",
-    "klaw": "^2.1.0",
-    "klaw-sync": "^3.0.0",
-    "lodash": "^3.10.1",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "react-redux": "4.3.0",
-    "react-router": "^2.0.0-rc5",
-    "redux": "^3.0.4",
-    "redux-promise": "^0.5.3",
-    "shelljs": "^0.7.8",
-    "socket.io": "^2.0.3"
-  }
+    "materialize-css": "^1.0.0-rc.2",
+    "node-sass": "^4.9.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

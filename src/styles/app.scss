@@ -1,0 +1,15 @@
+@import "~materialize-css/sass/materialize.scss";
+#ku-logo {
+    height: 3.56rem;
+}
+.parallax img{
+    filter: brightness(0.3);
+}
+.mini-title{
+    font-weight: bolder;
+    color: #e1f5fe;
+}
+.active-collapsible{
+	background-color: #5294e2;
+	color: rgba(245, 246, 247, 0.999);
+}
