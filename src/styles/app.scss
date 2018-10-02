@@ -1,7 +1,6 @@
 @import "~materialize-css/sass/materialize.scss";
-#ku-logo {
-    height: 3.56rem;
-}
+@import "colors";
+
 .parallax img{
     filter: brightness(0.3);
 }
@@ -10,6 +9,11 @@
     color: #e1f5fe;
 }
 .active-collapsible{
-	background-color: #5294e2;
-	color: rgba(245, 246, 247, 0.999);
+	background-color: $blue-darker-color;
+	color: $white-grey;
+}
+#mobile-demo{
+    li:hover{
+        background-color:map-get($blue-grey,"darken-3");
+    }
 }
