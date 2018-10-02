@@ -38,7 +38,7 @@ class Navbar extends Component {
                             <a href="#" data-target="mobile-demo" ref={ (dropdown) => {this.dropdown = dropdown} } className="hide-on-large-only dropdown-trigger right"><i className="material-icons">menu</i></a>
                             <ul id="navbar-pc" className="right hide-on-med-and-down" style={{marginRight:"1.2em"}}>
                                 <li><NavLink exact activeClassName="active light-blue darken-1" to="/~math204/">Home</NavLink></li>
-                                <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/announce">Announcements</NavLink></li>
+                                <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/announcements">Announcements</NavLink></li>
                                 <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/syllabus">Syllabus</NavLink></li>
                                 <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/info">Info &amp; Office Hours</NavLink></li>
                                 <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/homeworks">Homeworks</NavLink></li>
@@ -48,7 +48,7 @@ class Navbar extends Component {
                 </div>
                 <ul className="dropdown-content hide-on-large-only blue-grey darken-3" id="mobile-demo">
                     <li><NavLink exact activeClassName="active light-blue darken-1" to="/~math204/" className="white-text">Home</NavLink></li>
-                    <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/announce" className="white-text">Announcements</NavLink></li>
+                    <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/announcements" className="white-text">Announcements</NavLink></li>
                     <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/syllabus" className="white-text">Syllabus</NavLink></li>
                     <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/info" className="white-text">Info &amp; Office Hours</NavLink></li>
                     <li><NavLink activeClassName="active light-blue darken-1" to="/~math204/homeworks" className="white-text">Homeworks</NavLink></li>

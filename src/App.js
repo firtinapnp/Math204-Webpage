@@ -26,7 +26,7 @@ class App extends Component {
                         <Route exact path="/~math204/homeworks" component={Homeworks}/>
                         <Route exact path="/~math204/info" component={Info}/>
                         <Route exact path="/~math204/syllabus" component={Syllabus}/>
-                        <Route exact path="/~math204/announce" component={Announcements}/>
+                        <Route exact path="/~math204/announcements" component={Announcements}/>
                         <Route component={NotFound}/>
                     </Switch>
                 </div>

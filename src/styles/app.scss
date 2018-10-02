@@ -1,6 +1,8 @@
 @import "~materialize-css/sass/materialize.scss";
 @import "colors";
-
+#ku-logo {
+    height: 3.56rem;
+}
 .parallax img{
     filter: brightness(0.3);
 }
@@ -16,4 +18,21 @@
     li:hover{
         background-color:map-get($blue-grey,"darken-3");
     }
+}
+//Reference: https://stackoverflow.com/questions/11660710/css-transition-fade-in
+.fade-in {
+	opacity: 1;
+	animation-name: fade;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
