@@ -8,7 +8,7 @@
 }
 .mini-title{
     font-weight: bolder;
-    color: #e1f5fe;
+    color: $white-grey-writing-color;
 }
 .active-collapsible{
 	background-color: $blue-darker-color;
@@ -19,6 +19,9 @@
         background-color:map-get($blue-grey,"darken-3");
     }
 }
+blockquote{
+  border-left:5px solid $blue-darker-color;
+}
 //Reference: https://stackoverflow.com/questions/11660710/css-transition-fade-in
 .fade-in {
 	opacity: 1;
@@ -27,7 +30,9 @@
 	animation-timing-function: ease-in;
 	animation-duration: 1s;
 }
-
+body{
+    background-color:map-get($blue-grey,"lighten-5");
+}
 @keyframes fade {
 	from {
 		opacity: 0;

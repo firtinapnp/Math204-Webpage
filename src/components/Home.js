@@ -10,7 +10,7 @@ class Home extends Component {
     render() {
         return (
             <div className="parallax-container">
-                <h1 id="koc-uni" className="center-align  grey-text text-lighten-1"><img id="ku-logo" src={logo}/>Koc University</h1>
+                <h1 id="koc-uni" className="center-align  grey-text text-lighten-1"><img id="ku-logo" src={logo}/>Ko&#231; University</h1>
                 <h4 className="center-align grey-text">Department of Mathematics</h4>
                 <div ref={ (parallax) => {this.parallax = parallax} }  className="parallax">
                     <img src={wallpaper} alt="wallpaper"/>
