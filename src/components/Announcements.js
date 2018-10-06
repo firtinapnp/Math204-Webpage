@@ -3,8 +3,8 @@ import React, {Component} from "react";
 class Announcements extends Component {
     render() {
         return (
-            <div class="container">
-		        <h3 class="center-align">Announcements</h3>
+            <div className="container">
+		        <h3 className="center-align">Announcements</h3>
         	</div>
         );
     }

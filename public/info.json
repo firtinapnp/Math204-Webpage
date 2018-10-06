@@ -1,0 +1,40 @@
+{
+    "info": [
+        {
+            "type":"instructor",
+            "title":"Prof. Tolga Etgü",
+            "office":"SCI 267",
+            "officeHours":"MoWe 13:30-14:30",
+            "lectures":"MoWe: 10:00-11:15 SNA158 & 11:30-12:45 SNAA52 & 14:30-15:45 SOSB07",
+            "email":"tetgu@ku.edu.tr"
+        },
+        {
+            "type":"assistant",
+            "title":"Fırtına Küçük",
+            "office":"SCI 156",
+            "officeHours":"We 13:00 - 14:15",
+            "email":"fkucuk@ku.edu.tr"
+        },
+        {
+            "type":"assistant",
+            "title":"Oğuz Doğan",
+            "office":"SCI 156",
+            "officeHours":"Th 10:00 - 11:00",
+            "email":"odogan13@ku.edu.tr"
+        },
+        {
+            "type":"assistant",
+            "title":"Göksu Karadağ",
+            "office":"ENG 143",
+            "officeHours":"We 14:30 - 15:30",
+            "email":"gkaradag16@ku.edu.tr"
+        },
+        {
+            "type":"assistant",
+            "title":"Aslıhan Çeliker",
+            "office":"SCI 130",
+            "officeHours":"Fr 11:30 - 12:30",
+            "email":"aceliker@ku.edu.tr"
+        }
+    ]
+}

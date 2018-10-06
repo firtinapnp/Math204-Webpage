@@ -10,7 +10,7 @@ class Syllabus extends Component {
                     <h4 className="center-align">Fall 2018</h4>
                     <div id="page_1">
                         <h5>Title of the Course: Differential Equations</h5>
-                        <p>Click <a href={process.env.PUBLIC_URL + '/pdf/syllabus.pdf'}>here</a> to view the syllabus as pdf</p>
+                        <p>Click <a href={`${process.env.PUBLIC_URL}/pdf/syllabus.pdf`}>here</a> to view the syllabus as pdf</p>
                         <h5>Instructors</h5>
                         <blockquote>
                             <ul>
@@ -29,7 +29,7 @@ class Syllabus extends Component {
                         <h5>Web Address</h5>
                         <p><a href="http://home.ku.edu.tr/~math204">http://home.ku.edu.tr/~math204</a></p>
                         <h5>Textbook</h5>
-                        <img className="left-align" src={book}/>
+                        <img className="left-align" src={book} alt="Textbook"/>
                         <p> W. E. Boyce, R. C. DiPrima, D.B. Meade, Elementary Differential Equations and
                             Boundary Value Problems, Global/11th Edition (John Wiley &amp; Sons, New York, 2017).
                         </p>

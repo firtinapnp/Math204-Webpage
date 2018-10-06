@@ -10,6 +10,9 @@
     font-weight: bolder;
     color: $white-grey-writing-color;
 }
+.blue-darker-text{
+    color:$blue-darker-color;
+}
 .active-collapsible{
 	background-color: $blue-darker-color;
 	color: $white-grey;
@@ -32,6 +35,9 @@ blockquote{
 }
 body{
     background-color:map-get($blue-grey,"lighten-5");
+}
+.activeclass{
+    background-color:$blue-darker-color;
 }
 @keyframes fade {
 	from {
