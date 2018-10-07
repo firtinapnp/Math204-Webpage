@@ -18,8 +18,7 @@ class Homeworks extends Component {
             onOpenEnd:(el)=>this.props.openCollapsible(el.id),
             onCloseStart:(el)=>this.props.closeCollapsible(el.id)
         });
-        let instance = M.Collapsible.getInstance(this.collapsible);
-        instance.close(1);
+        
     }
 
     createHomework(hw,index){
