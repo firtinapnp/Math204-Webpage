@@ -39,6 +39,14 @@ body{
 .activeclass{
     background-color:$blue-darker-color;
 }
+table{
+    &.highlight > tbody > tr {
+      transition: background-color .25s ease;
+      &:hover {
+        background-color: $white-grey;
+      }
+    }
+}
 @keyframes fade {
 	from {
 		opacity: 0;
