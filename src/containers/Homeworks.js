@@ -15,10 +15,10 @@ class Homeworks extends Component {
     }
     componentDidMount(){
         M.Collapsible.init(this.collapsible, {
-            onOpenEnd:(el)=>this.props.openCollapsible(el.id),
-            onCloseStart:(el)=>this.props.closeCollapsible(el.id)
+            onOpenEnd:(el)=>this.props.openCollapsible(el.id,"homework"),
+            onCloseStart:(el)=>this.props.closeCollapsible(el.id,"homework")
         });
-        
+
     }
 
     createHomework(hw,index){

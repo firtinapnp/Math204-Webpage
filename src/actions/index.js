@@ -34,19 +34,30 @@ export function fetchHomeworks(){
         });
     }
 }
-export function openCollapsible(elID){
+export function fetchExams(){
+    const request = axios.get(EXAMS_URL);
     return dispatch => {
-        dispatch({
-            type: OPEN_COLLAPSIBLE,
-            payload: elID
+        request.then(data => {
+            dispatch({
+                type: FETCH_EXAMS,
+                payload: data
+            });
         });
     }
 }
-export function closeCollapsible(elID){
+export function openCollapsible(elID,elType){
+    return dispatch => {
+        dispatch({
+            type: OPEN_COLLAPSIBLE,
+            payload: {elID,elType}
+        });
+    }
+}
+export function closeCollapsible(elID,elType){
     return dispatch => {
         dispatch({
             type: CLOSE_COLLAPSIBLE,
-            payload: elID
+            payload: {elID,elType}
         });
     }
 }

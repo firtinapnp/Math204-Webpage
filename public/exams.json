@@ -1,5 +1,46 @@
 {
-  "exams": [
-
-  ]
+    "old_exams": [
+        {
+            "title":"Midterm 1",
+            "solutions":[
+                {
+                    "name":"Left",
+                    "link":"pdf/old-exams/mt1-left.pdf"
+                },
+                {
+                    "name":"Right",
+                    "link":"pdf/old-exams/mt1-right.pdf"
+                }
+            ]
+        },
+        {
+            "title":"Midterm 2",
+            "solutions":[
+                {
+                    "name":"Left",
+                    "link":"pdf/old-exams/mt2-left.pdf"
+                },
+                {
+                    "name":"Right",
+                    "link":"pdf/old-exams/mt2-right.pdf"
+                }
+            ]
+        },
+        {
+            "title":"Final",
+            "solutions":[
+                {
+                    "name":"Left",
+                    "link":"pdf/old-exams/final-left.pdf"
+                },
+                {
+                    "name":"Right",
+                    "link":"pdf/old-exams/final-right.pdf"
+                }
+            ]
+        }
+    ],
+    "exams": [
+        
+    ]
 }

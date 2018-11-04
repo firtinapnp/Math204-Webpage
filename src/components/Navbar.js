@@ -42,6 +42,8 @@ class Navbar extends Component {
                                 <li><NavLink activeStyle={{backgroundColor:"#5294e2"}} to={`${process.env.PUBLIC_URL}/syllabus`}>Syllabus</NavLink></li>
                                 <li><NavLink activeStyle={{backgroundColor:"#5294e2"}} to={`${process.env.PUBLIC_URL}/info`}>Info &amp; Office Hours</NavLink></li>
                                 <li><NavLink activeStyle={{backgroundColor:"#5294e2"}} to={`${process.env.PUBLIC_URL}/homeworks`}>Homeworks</NavLink></li>
+                                <li><NavLink activeStyle={{backgroundColor:"#5294e2"}} to={`${process.env.PUBLIC_URL}/exams`}>Exams</NavLink></li>
+
                             </ul>
                         </div>
                     </nav>
@@ -52,6 +54,8 @@ class Navbar extends Component {
                     <li><NavLink activeStyle={{backgroundColor:"#5294e2"}}to={`${process.env.PUBLIC_URL}/syllabus`} className="white-text">Syllabus</NavLink></li>
                     <li><NavLink activeStyle={{backgroundColor:"#5294e2"}} to={`${process.env.PUBLIC_URL}/info`} className="white-text">Info &amp; Office Hours</NavLink></li>
                     <li><NavLink activeStyle={{backgroundColor:"#5294e2"}} to={`${process.env.PUBLIC_URL}/homeworks`} className="white-text">Homeworks</NavLink></li>
+                    <li><NavLink activeStyle={{backgroundColor:"#5294e2"}} to={`${process.env.PUBLIC_URL}/exams`} className="white-text">Exams</NavLink></li>
+
                 </ul>
             </div>
         );
