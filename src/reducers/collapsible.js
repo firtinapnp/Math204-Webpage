@@ -1,15 +1,15 @@
 import {OPEN_COLLAPSIBLE,CLOSE_COLLAPSIBLE} from "../actions";
 
-export default function collapsible(state={},action){
+export default function collapsible(state={examDone:false,hwDone:false,oldExamDone:false,activeHW:"",activeExam:"",activeOldExam:""},action){
     switch(action.type){
         case OPEN_COLLAPSIBLE:
             if(action.payload){
                 if(action.payload.elType === "exam"){
-                    return {...state, done:true, activeExam:action.payload.elID};
+                    return {...state, examDone:true, activeExam:action.payload.elID};
                 }else if(action.payload.elType === "oldexam"){
-                    return {...state, done:true, activeOldExam:action.payload.elID} ;
+                    return {...state, oldExamDone:true, activeOldExam:action.payload.elID} ;
                 }else if(action.payload.elType === "homework"){
-                    return {...state, done:true, activeHW:action.payload.elID} ;
+                    return {...state, hwDone:true, activeHW:action.payload.elID} ;
                 }
             }else{
                 return state;
@@ -18,11 +18,11 @@ export default function collapsible(state={},action){
         case CLOSE_COLLAPSIBLE:
             if(action.payload){
                 if(action.payload.elType === "exam"){
-                    return {...state, done:true, activeExam:""};
+                    return {...state, examDone:true, activeExam:""};
                 }else if(action.payload.elType === "oldexam"){
-                    return {...state, done:true, activeOldExam:""} ;
+                    return {...state, oldExamDone:true, activeOldExam:""} ;
                 }else if(action.payload.elType === "homework"){
-                    return {...state, done:true, activeHW:""} ;
+                    return {...state, hwDone:true, activeHW:""} ;
                 }
             }else{
                 return state;

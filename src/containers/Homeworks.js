@@ -46,7 +46,7 @@ function mapStateToProps(state){
     let homeworks = state.homeworks.homeworks;
     let collapsible = state.collapsible;
     let activeHW="";
-    if(collapsible.done){
+    if(collapsible.hwDone){
         activeHW=collapsible.activeHW;
     }else{
         activeHW = homeworks ? homeworks[homeworks.length-1].title : ""

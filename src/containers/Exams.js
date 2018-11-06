@@ -66,11 +66,14 @@ function mapStateToProps(state){
     let collapsible = state.collapsible;
     let activeExam="";
     let activeOldExam="";
-    if(collapsible.done){
+    if(collapsible.examDone){
         activeExam=collapsible.activeExam;
-        activeOldExam=collapsible.activeOldExam;
     }else{
         activeExam = exams && exams[0] ? exams[0].title : ""
+    }
+    if(collapsible.oldExamDone){
+        activeOldExam=collapsible.activeOldExam;
+    }else{
         activeOldExam = oldexams && oldexams[0] ? oldexams[0].title : ""
     }
     return{
